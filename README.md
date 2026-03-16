@@ -1,6 +1,7 @@
 # notify-telegram — AI Skill
 
 > An AI skill that sends you a sarcastic Telegram notification when your assistant finishes a task.
+
 > Скилл для AI-ассистентов, который отправляет саркастическое уведомление в Telegram, когда задача завершена.
 
 ---
