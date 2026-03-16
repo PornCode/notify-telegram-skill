@@ -1,9 +1,12 @@
 # notify-telegram — AI Skill
 
 > An AI skill that sends you a sarcastic Telegram notification when your assistant finishes a task.
+
 > Скилл для AI-ассистентов, который отправляет саркастическое уведомление в Telegram, когда задача завершена.
 
 > ⚠️ **Before installing:** download the repository as a ZIP, fill in `config.json` with your credentials first, then install the archive into your AI assistant.
+
+> ⚠️ **Перед установкой:** скачайте репозиторий в формате ZIP, сначала заполните файл `config.json` своими учетными данными, а затем установите архив в своего ИИ-помощника.
 
 ---
 
