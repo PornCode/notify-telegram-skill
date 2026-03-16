@@ -1,8 +1,9 @@
 # notify-telegram — AI Skill
 
 > An AI skill that sends you a sarcastic Telegram notification when your assistant finishes a task.
-
 > Скилл для AI-ассистентов, который отправляет саркастическое уведомление в Telegram, когда задача завершена.
+
+> ⚠️ **Before installing:** download the repository as a ZIP, fill in `config.json` with your credentials first, then install the archive into your AI assistant.
 
 ---
 
@@ -27,32 +28,22 @@ The notifications are written in a witty, slightly sarcastic tone, like a cynica
 
 #### Claude Desktop (Cowork) — macOS
 
-1. Download [`notify-telegram.skill`](./notify-telegram.skill) from this repository
-2. Open the Claude desktop app
-3. Go to **Settings** → **Capabilities** → **Skills** → click **"Go to Customize"**
-4. Click **+** and upload the `.skill` file
-5. After installation, find the `config.json` inside the skill folder and fill in your credentials (see Setup below)
+1. Download this repository as a ZIP (green **Code** button → **Download ZIP**)
+2. Unzip it, open `config.json` and fill in your credentials (see Setup below) — do this **before** installing
+3. Re-zip the folder into an archive
+4. Open the Claude desktop app
+5. Go to **Settings** → **Capabilities** → **Skills** → click **"Go to Customize"**
+6. Click **+** and upload the archive
 
-> Note: Claude Desktop stores skills in the cloud tied to your account — there is no local folder to copy files into. The only way to add a skill is through the Settings interface described above.
-
-#### Claude Code (terminal)
-
-```bash
-mkdir -p ~/.claude/skills
-git clone https://github.com/YOUR_USERNAME/notify-telegram ~/.claude/skills/notify-telegram
-```
-
-Then fill in `~/.claude/skills/notify-telegram/config.json`.
+> Note: It appears that Claude Desktop currently stores skills in the cloud tied to your account — the working way to add a skill is through the Settings interface described above.
 
 #### OpenAI Codex (VS Code extension)
 
-Copy the skill folder into your Codex skills directory:
+Fill in `config.json` first, then copy the skill folder into your Codex skills directory:
 
 ```bash
 cp -r notify-telegram-skill ~/.codex/skills/
 ```
-
-Then fill in `~/.codex/skills/notify-telegram-skill/config.json`.
 
 #### Other AI assistants
 
@@ -109,32 +100,22 @@ You need two things: a **bot token** and your **chat ID**.
 
 #### Claude Desktop (Cowork) — macOS
 
-1. Скачай [`notify-telegram.skill`](./notify-telegram.skill) из этого репозитория
-2. Открой приложение Claude на десктопе
-3. Перейди в **Settings** → **Capabilities** → **Skills** → нажми **"Go to Customize"**
-4. Нажми **+** и загрузи файл `.skill`
-5. После установки найди `config.json` внутри папки скилла и заполни данные (см. ниже)
+1. Скачай репозиторий как ZIP (зелёная кнопка **Code** → **Download ZIP**)
+2. Распакуй архив, открой `config.json` и заполни данные (см. ниже) — **до установки**
+3. Снова упакуй папку в архив
+4. Открой приложение Claude на десктопе
+5. Перейди в **Settings** → **Capabilities** → **Skills** → нажми **"Go to Customize"**
+6. Нажми **+** и загрузи архив
 
-> Важно: Claude Desktop хранит скиллы в облаке, привязанном к аккаунту — никакой локальной папки для копирования нет. Единственный способ добавить скилл — через интерфейс настроек, описанный выше.
-
-#### Claude Code (терминал)
-
-```bash
-mkdir -p ~/.claude/skills
-git clone https://github.com/YOUR_USERNAME/notify-telegram ~/.claude/skills/notify-telegram
-```
-
-Затем заполни `~/.claude/skills/notify-telegram/config.json`.
+> Важно: Похоже на данный момент Claude Desktop хранит скиллы в облаке, привязанном к аккаунту — действующий способ добавить скилл — через интерфейс настроек, описанный выше.
 
 #### OpenAI Codex (расширение VS Code)
 
-Скопируй папку скилла в директорию скиллов Codex:
+Сначала заполни `config.json`, затем скопируй папку скилла в директорию скиллов Codex:
 
 ```bash
 cp -r notify-telegram-skill ~/.codex/skills/
 ```
-
-Затем заполни `~/.codex/skills/notify-telegram-skill/config.json`.
 
 #### Другие AI-ассистенты
 
@@ -172,10 +153,9 @@ cp -r notify-telegram-skill ~/.codex/skills/
 
 ```
 notify-telegram/
-├── SKILL.md              # Skill instructions for the AI
-├── config.json           # Your credentials (fill this in, never commit!)
-├── config.example.json   # Template — copy to config.json and fill in
-└── README.md             # This file
+├── SKILL.md        # Skill instructions for the AI
+├── config.json     # Your credentials (fill this in before installing, never commit!)
+└── README.md       # This file
 ```
 
 ## Contributing
